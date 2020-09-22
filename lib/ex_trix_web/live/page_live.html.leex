@@ -1,3 +1,6 @@
+<%= form_for :editor, "#", [phx_change: :update_editor, phx_submit: :update_editor], fn f -> %>
+  <%= hidden_input f, :content, id: "editor-input", phx_hook: "Editor" %>
+<% end %>
 <div phx-update="ignore" class="trix-editor">
-  <trix-editor ></trix-editor>
+  <trix-editor id="the-editor" input="editor-input"></trix-editor>
 </div>
