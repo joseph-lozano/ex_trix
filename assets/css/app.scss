@@ -3,6 +3,12 @@
 @import "../node_modules/nprogress/nprogress.css";
 
 /* LiveView specific classes for your customizations */
+.trix-editor trix-editor {
+  min-height: 400px;
+}
+.trix-editor trix-toolbar .trix-button-row {
+  overflow: visible;
+}
 .phx-no-feedback.invalid-feedback,
 .phx-no-feedback .invalid-feedback {
   display: none;
